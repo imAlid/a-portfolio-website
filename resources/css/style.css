@@ -18,6 +18,7 @@ CSS INDEX
 2. Common CSS
 3. Reuseable CSS
 4. Hero Section
+5. Hire Section
 
 ========================================*/
 
@@ -67,10 +68,19 @@ h1::after {
   background: #fff;
   display: block;
 }
+h2 {
+  font-size: 1.8rem;
+}
 
 a:link,
 a:hover {
   text-decoration: none;
+}
+p {
+  font-size: 1.6rem;
+}
+section {
+  margin: 10rem 0;
 }
 
 /* 3. Reuseable CSS */
@@ -78,6 +88,14 @@ a:hover {
 .row {
   max-width: 118rem;
   margin: auto;
+}
+.btn {
+  background: rgb(252, 67, 67);
+  padding: 1.4rem 5.8rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
 }
 
 /* ======================================
@@ -135,13 +153,54 @@ a:hover {
   font-size: 5rem;
 }
 .next-section-btn {
-  position: relative;
   text-align: center;
 }
 .next-section-btn a {
-  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  position: absolute;
   bottom: 4.5rem;
   left: 0;
   right: 0;
   margin: auto;
+}
+/* ======================================
+
+5. Hire Section
+
+========================================*/
+
+.hire-section {
+}
+
+.hire-cointainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: justify;
+}
+.grid-hire-item img {
+  width: 80%;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+.grid-hire-item p {
+  margin: 2.5rem 0;
+}
+.btn-full {
+  background: red;
+  text-transform: uppercase;
+}
+.btn-full:hover {
+  background: transparent;
+  border: 2px solid red;
+  color: red;
 }
