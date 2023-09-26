@@ -1,4 +1,4 @@
-/* ======================================
+/*! ======================================
 
 Template Name: Paul Lapkin
 Template URI: https://moshiur.dev/projects/paul-lapkin/
@@ -10,7 +10,7 @@ Support: mr.alid24@gmail.com
 
 ========================================*/
 
-/* ======================================
+/*! ======================================
 
 CSS INDEX
 ---------
@@ -19,13 +19,15 @@ CSS INDEX
 3. Reuseable CSS
 4. Hero Section
 5. Hire Section
+6. process section
+7. Experience section
 
 ========================================*/
 
-/* 1. Google Fonts */
+/*! 1. Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
-/* 2. Common CSS */
+/*! 2. Common CSS */
 
 * {
   margin: 0;
@@ -69,6 +71,13 @@ h1::after {
   display: block;
 }
 h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+h4 {
   font-size: 1.8rem;
 }
 
@@ -76,14 +85,18 @@ a:link,
 a:hover {
   text-decoration: none;
 }
-p {
+p,
+.section-title p {
   font-size: 1.6rem;
+}
+.section-title p {
+  margin: 1.5rem 0;
 }
 section {
   margin: 10rem 0;
 }
 
-/* 3. Reuseable CSS */
+/*! 3. Reuseable CSS */
 
 .row {
   max-width: 118rem;
@@ -97,12 +110,19 @@ section {
   color: #fff;
   display: inline-block;
 }
-
-/* ======================================
+.section-title {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+hr {
+  border: 0;
+  border: 1px dotted #fff;
+}
+/*! ==================================================================
 
 4. Hero Section
 
-========================================*/
+======================================== */
 
 #hero {
   height: 100vh;
@@ -165,7 +185,7 @@ section {
   right: 0;
   margin: auto;
 }
-/* ======================================
+/*! ======================================
 
 5. Hire Section
 
@@ -203,4 +223,77 @@ section {
   background: transparent;
   border: 2px solid red;
   color: red;
+}
+
+/*! ======================================
+
+6. process section
+
+========================================*/
+
+#process {
+  background: #f6f6f6;
+  padding-top: 8rem;
+}
+
+.grid-process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 1rem;
+}
+.grid-process-item {
+  background: #000;
+  color: white;
+  padding: 10rem 0;
+}
+.grid-process-item ion-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.grid-process-item:first-child {
+  background: #16a085;
+}
+.grid-process-item:nth-child(2) {
+  background: #27ae60;
+}
+.grid-process-item:nth-child(3) {
+  background: #2980b9;
+}
+.grid-process-item:last-child {
+  background: #8e44ad;
+}
+
+/*! ==================================================================
+
+7. Experience section
+
+======================================== */
+
+#exp {
+  background: #000 url(./img/experience.jpg) no-repeat center top/ cover fixed;
+  padding: 10rem;
+}
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.exp-grid-item {
+  background: #000000c9;
+  color: white;
+  padding: 5rem 3rem;
+  text-align: justify;
+}
+.exp-grid-item h3 {
+  margin-bottom: 2rem;
+}
+.job h4 {
+  margin: 2rem 0;
+}
+.job span {
+  font-size: 1.7rem;
+}
+.job p {
+  margin: 2rem 0;
 }
