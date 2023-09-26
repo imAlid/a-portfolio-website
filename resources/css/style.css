@@ -22,6 +22,7 @@ CSS INDEX
 6. process section
 7. Experience section
 8. Work Section
+9. Testo Section
 
 ========================================*/
 
@@ -342,4 +343,29 @@ hr {
 }
 .work-grid-item:nth-child(7) {
   background: url(./img/lw2.jpg) no-repeat center / cover;
+}
+
+/*! ==================================================================
+
+9. Testo Section
+
+======================================== */
+
+#desto{
+  padding: 10rem 0;
+  background: #000 url(./img/testimonial.jpg) no-repeat center top/ cover;
+}
+.testo-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.testo-grid-item p{
+  width: 80%;
+  margin-bottom: 5rem;
+}
+.coat{
+  margin-bottom: 5rem;
+}
+.testo-grid-item h4{
+  margin: 2rem;
 }
