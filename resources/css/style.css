@@ -134,13 +134,19 @@ hr {
 #hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-    url(./img/hero.jpg);
+    url(./office.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
   position: relative;
+}
+#hero .particles-js-canvas-el {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 .clear-fix::after {
   content: "";
@@ -197,9 +203,6 @@ hr {
 5. Hire Section
 
 ========================================*/
-
-.hire-section {
-}
 
 .hire-cointainer {
   display: grid;
@@ -280,7 +283,7 @@ hr {
 ======================================== */
 
 #exp {
-  background: #000 url(./img/experience.jpg) no-repeat center top/ cover fixed;
+  background: #000 url(./demo.jpg) no-repeat center top/ cover fixed;
   padding: 10rem;
 }
 .exp-grid {
