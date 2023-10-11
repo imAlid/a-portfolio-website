@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="vendors/css/normalize.css" />
   <link rel="stylesheet" href="resources/css/style.css" />
   <link rel="stylesheet" href="resources/css/responsive.css" />
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -25,11 +27,28 @@
           <img src="./resources/img/logo.png" alt="logo" />
         </div>
         <div class="menu-icon">
-          <a href="#">
+          <a href="#" onclick="openNav()">
             <ion-icon name="menu-outline"></ion-icon>
           </a>
         </div>
       </nav>
+
+      <div class="manu-container" id="navbar">
+        <div class="close-btn">
+          <a href="#" onclick="closeNav()"><i class="lni lni-close"></i></a>
+        </div>
+        <div class="manu-items">
+          <ul onclick="closeNav()">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Experiance</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#info">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="hero-text-box">
       <div class="row">
@@ -284,6 +303,9 @@
   <!-- PARTICAL JS -->
   <script src="./vendors/js/particles.min.js"></script>
   <script src="./vendors/js/app.js"></script>
+
+  <!-- custom js -->
+  <script src="./resources/js/script.js"></script>
 </body>
 
 </html>

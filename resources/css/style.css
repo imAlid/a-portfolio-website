@@ -198,6 +198,54 @@ hr {
   right: 0;
   margin: auto;
 }
+
+/* start nav  */
+
+.manu-container {
+  width: 0%;
+  height: 100vh;
+  background: #000000ea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 4rem;
+  right: 4.2rem;
+}
+
+.close-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.manu-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.manu-items ul li {
+  padding: 0.7rem 0;
+  font-size: 2.5rem;
+  list-style-type: none;
+  text-align: center;
+}
+.manu-items ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+}
+.manu-items ul li a:hover {
+  color: red;
+  font-size: 2.6rem;
+}
+
 /*! ======================================
 
 5. Hire Section
